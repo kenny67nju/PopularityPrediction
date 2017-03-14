@@ -75,6 +75,8 @@ class Network(object):
 		plt.figure(self.index)
 		x = list(range(1,len(self.accuracyList) + 1))
 		plt.plot(np.array(x), np.array(self.accuracyList))
+		plt.xlabel(u'轮数',fontproperties=HEITI)
+		plt.ylabel(u'精确度',fontproperties=HEITI)
 		figureName = "graph/networkAcc" + str(self.index) + ".png"
 		plt.savefig(figureName)
 		fileName = "graph/networkAcc" + str(self.index) + ".json"

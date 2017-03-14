@@ -54,6 +54,9 @@ def drawCenters(centers):
 		plt.figure(index)
 		plt.clf()
 		plt.plot(x, centers[index, :])
+		plt.title(u'中心点趋势图',fontproperties=HEITI)
+		plt.xlabel(u'小时',fontproperties=HEITI)
+		plt.ylabel(u'点播量',fontproperties=HEITI)
 		figureName = "graph/center" + str(index + 1) + ".png"
 		plt.savefig(figureName)
 	
