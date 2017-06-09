@@ -1,3 +1,4 @@
+#-*-coding:utf-8 -*-
 import matplotlib
 
 NUM_FEATURES = 3 * 24 #训练使用的特征的数量

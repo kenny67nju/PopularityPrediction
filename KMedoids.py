@@ -1,3 +1,4 @@
+#-*-coding:utf-8 -*-
 from dtw import dtw
 import numpy as np
 import random

@@ -1,6 +1,9 @@
+#-*-coding:utf-8 -*-
 import xlrd
 import json
 import random
+
+
 
 #从Excel读取数据表
 def openExcel(file = 'data/PopularityData.xlsx'):
