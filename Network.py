@@ -69,7 +69,6 @@ class Network(object):
 				line = trainData.nextRecord()
 				self.session.run(self.update,feed_dict={self.inputX:[line[FEATURE_START_INDEX:FEATURE_START_INDEX + NUM_FEATURES]], \
 					self.inputY:[[sum(line[FEATURE_START_INDEX:FEATURE_START_INDEX + TOTAL_FEATURES_NUM])]]})
-			record = trainData.nextRecord()
 			print("the epoch %d" % (epoch + 1))
 			self.validate()
 		print('=====end training=====')
